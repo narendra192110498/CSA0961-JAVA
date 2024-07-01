@@ -1,0 +1,21 @@
+import java.util.*;
+class R1921104984
+{
+public static void main(String[] args)
+{ 
+String str;
+int i;
+int count =0,special_count=0;
+str="modibirthday@september17$%&#";
+int n=str.length();
+for(i=1;i<n;i++)
+{
+char ch=str.charAt(i);
+if(ch>='A' && ch<='Z' || ch>='a' && ch<='z'|| ch>='0' && ch<='9')
+ count++;
+else
+special_count++;
+}
+System.out.println("special characters : " +special_count);
+}
+}
